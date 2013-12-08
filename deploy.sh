@@ -50,9 +50,7 @@ read COMMITMSG
 git commit -am "$COMMITMSG"
 
 echo "Tagging new version in git"
-git tag -a v"$NEWVERSION1" -m \"Tagging version $NEWVERSION1\"
-
-echo "git tag -a v$NEWVERSION1 -m \"Tagging version $NEWVERSION1\""
+git tag -a "v$NEWVERSION1" -m "Tagging version $NEWVERSION1"
 
 echo "Pushing latest commit to origin, with tags"
 git push origin master
